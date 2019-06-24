@@ -1,6 +1,16 @@
 /*
-    BASIC SETUP
+Orange color: #e67e22
+
 */
+
+
+/* ----------------------------------------------- */
+
+
+/* BASIC SETUP */
+
+
+/* ----------------------------------------------- */
 
 * {
     margin: 0;
@@ -32,9 +42,13 @@ body {
 }
 
 
-/*
-    REUSABLE COMPONENTS
-*/
+/* ----------------------------------------------- */
+
+
+/* REUSABLE COMPONENTS */
+
+
+/* ----------------------------------------------- */
 
 .row {
     max-width: 1140px;
@@ -50,15 +64,13 @@ section {
 }
 
 
-/*
-    HEADING
-*/
+/* ----- HEADINGS ----- */
 
 h1,
 h2,
 h3 {
     font-weight: 300;
-    text-transform: uppercae;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -94,9 +106,7 @@ h2:after {
 }
 
 
-/*
-    PARAGRAPHS
-*/
+/* ----- PARAGRAPHS ----- */
 
 .long-copy {
     line-height: 145%;
@@ -110,9 +120,7 @@ h2:after {
 }
 
 
-/*
-    ICONS
-*/
+/* ----- ICONS ----- */
 
 .icon-big {
     font-size: 350%;
@@ -128,15 +136,14 @@ h2:after {
     color: #e67e22;
     font-size: 120%;
     margin-right: 10px;
+    /*secrets to align text and icons*/
     line-height: 120%;
     vertical-align: middle;
     margin-top: -5px;
 }
 
 
-/*
-    LINKS
-*/
+/* ----- LINKS ----- */
 
 a:link,
 a:visited {
@@ -144,6 +151,7 @@ a:visited {
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 1px solid #e67e22;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -154,9 +162,7 @@ a:active {
 }
 
 
-/*
-    BUTTONS
-*/
+/* ----- BUTTONS ----- */
 
 .btn:link,
 .btn:visited,
@@ -166,6 +172,7 @@ input[type=submit] {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -203,12 +210,17 @@ input[type=submit]:active {
 }
 
 
-/* 
-    HEADER 
-*/
+/* ----------------------------------------------- */
+
+
+/* HEADER */
+
+
+/* ----------------------------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), url(img/hero.jpg));
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -220,6 +232,7 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
@@ -240,9 +253,7 @@ header {
 }
 
 
-/*
-    Main nav
-*/
+/* Main navi */
 
 .main-nav {
     float: right;
@@ -273,9 +284,7 @@ header {
 }
 
 
-/*
-    Mobile Nav
-*/
+/* Mobile navi */
 
 .mobile-nav-icon {
     float: right;
@@ -290,9 +299,7 @@ header {
 }
 
 
-/*
-    Sticky Nav
-*/
+/* Sticky navi */
 
 .sticky {
     position: fixed;
@@ -323,18 +330,26 @@ header {
 }
 
 
-/*
-    FEATURES
-*/
+/* ----------------------------------------------- */
+
+
+/* FEATURES */
+
+
+/* ----------------------------------------------- */
 
 .section-features .long-copy {
     margin-bottom: 30px;
 }
 
 
-/*
-    MEALS
-*/
+/* ----------------------------------------------- */
+
+
+/* MEALS */
+
+
+/* ----------------------------------------------- */
 
 .section-meals {
     padding: 0;
@@ -377,9 +392,13 @@ header {
 }
 
 
-/*
-    HOW IT WORKS SECTION
-*/
+/* ----------------------------------------------- */
+
+
+/* HOW IT WORKS SECTION */
+
+
+/* ----------------------------------------------- */
 
 .section-steps {
     background-color: #f4f4f4;
@@ -438,9 +457,13 @@ header {
 }
 
 
-/*
-    CITIES
-*/
+/* ----------------------------------------------- */
+
+
+/* CITIES */
+
+
+/* ----------------------------------------------- */
 
 .box img {
     width: 100%;
@@ -453,9 +476,13 @@ header {
 }
 
 
-/*
-    TESTIMONIALS
-*/
+/* ----------------------------------------------- */
+
+
+/* TESTIMONIALS */
+
+
+/* ----------------------------------------------- */
 
 .section-testimonials {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
@@ -496,9 +523,13 @@ cite img {
 }
 
 
-/*
-    SIGNUP
-*/
+/* ----------------------------------------------- */
+
+
+/* SIGN UP */
+
+
+/* ----------------------------------------------- */
 
 .section-plans {
     background-color: #f4f4f4;
@@ -553,9 +584,13 @@ cite img {
 }
 
 
-/*
-    FORM
-*/
+/* ----------------------------------------------- */
+
+
+/* FORM */
+
+
+/* ----------------------------------------------- */
 
 .contact-form {
     width: 60%;
@@ -585,9 +620,13 @@ input[type=checkbox] {
 }
 
 
-/*
-    FOOTER
-*/
+/* ----------------------------------------------- */
+
+
+/* FOOTER */
+
+
+/* ----------------------------------------------- */
 
 footer {
     background-color: #333;
@@ -668,9 +707,13 @@ footer p {
 }
 
 
-/*
-    ANIMATIONS
-*/
+/* ----------------------------------------------- */
+
+
+/* Animations */
+
+
+/* ----------------------------------------------- */
 
 .js--wp-1,
 .js--wp-2,
